@@ -1,0 +1,7 @@
+php_value error_reporting 15
+php_flag display_errors On
+<FilesMatch "\.(ttf|otf|eot|woff|woff2)$">
+  <IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+  </IfModule>
+</FilesMatch>
